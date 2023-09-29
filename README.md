@@ -1,5 +1,5 @@
 # SemilleroFullStackJava-S1
-* Entrega Sesión 1.
+# Entrega Sesión 1.
 * Creación de Proyecto.
 * Creación de una clase principal
 * Edita el método main para crear un menú que imprima las siguientes opciones:
