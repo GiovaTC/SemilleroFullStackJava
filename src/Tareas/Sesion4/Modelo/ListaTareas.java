@@ -7,11 +7,11 @@ import java.util.List;
 public class ListaTareas {
     private String nombre;
     private LocalDateTime fechaCreacion;
-    private List<Tarea> tareas;
+    private List<String> tareas;
 
     public ListaTareas(String nombre) {
         this.nombre = nombre;
-        this.tareas = new ArrayList<>();
+        this.tareas = new ArrayList<String>();
     }
 
     {
@@ -31,15 +31,17 @@ public class ListaTareas {
         return fechaCreacion;
     }
 
-    public List<Tarea> getTareas() {
+    public List<String> getTareas() {
         return tareas;
     }
 
-    public void setTareas(List<Tarea> tareas) {
+    public void setTareas(List<String> tareas) {
         this.tareas = tareas;
     }
 
-    public void agregarTarea(Tarea tarea) {
+    public void agregarTarea(String tarea) {
         tareas.add(tarea);
     }
+
+
 }
