@@ -1,3 +1,5 @@
+package Sesion2;
+
 public class Tarea {
     private String descripcion;
 

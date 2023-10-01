@@ -1,3 +1,5 @@
+package Sesion2;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,6 +60,9 @@ public class Proyecto {
         Proyecto proyecto = new Proyecto();
         Scanner scanner = new Scanner(System.in);
 
+        short opcionSeleccionada;
+        String nombreOpcionSeleccionada;
+
         while (true) {
             System.out.println("\nMenú:");
             System.out.println("1. Crear nueva lista de tareas");
@@ -68,35 +73,35 @@ public class Proyecto {
             System.out.println("6. Salir");
 
             System.out.print("Ingrese la opción: ");
-            int opcion = scanner.nextInt();
+            opcionSeleccionada = scanner.nextShort();
             scanner.nextLine(); // Consumir la nueva línea después del número
 
-            switch (opcion) {
+            switch (opcionSeleccionada) {
                 case 1:
                     System.out.print("Ingrese el nombre de la nueva lista de tareas: ");
-                    String nombreNuevaLista = scanner.nextLine();
-                    proyecto.crearNuevaListaDeTareas(nombreNuevaLista);
-                    System.out.println("Lista de tareas '" + nombreNuevaLista + "' creada.");
+                    nombreOpcionSeleccionada = scanner.nextLine();
+                    proyecto.crearNuevaListaDeTareas(nombreOpcionSeleccionada);
+                    System.out.println("Lista de tareas '" + nombreOpcionSeleccionada + "' creada.");
                     break;
                 case 2:
                     proyecto.verListasDeTareas();
                     break;
                 case 3:
                     System.out.print("Ingrese el nombre de la lista de tareas: ");
-                    String nombreListaVer = scanner.nextLine();
-                    proyecto.verTareasDeLista(nombreListaVer);
+                    nombreOpcionSeleccionada = scanner.nextLine();
+                    proyecto.verTareasDeLista(nombreOpcionSeleccionada);
                     break;
                 case 4:
                     System.out.print("Ingrese el nombre de la lista de tareas: ");
-                    String nombreListaActualizar = scanner.nextLine();
+                    nombreOpcionSeleccionada = scanner.nextLine();
                     System.out.print("Ingrese la descripción de la nueva tarea: ");
                     String nuevaTarea = scanner.nextLine();
-                    proyecto.actualizarListaDeTareas(nombreListaActualizar, nuevaTarea);
+                    proyecto.actualizarListaDeTareas(nombreOpcionSeleccionada, nuevaTarea);
                     break;
                 case 5:
                     System.out.print("Ingrese el nombre de la lista de tareas a eliminar: ");
-                    String nombreListaEliminar = scanner.nextLine();
-                    proyecto.eliminarListaDeTareas(nombreListaEliminar);
+                    nombreOpcionSeleccionada = scanner.nextLine();
+                    proyecto.eliminarListaDeTareas(nombreOpcionSeleccionada);
                     break;
                 case 6:
                     System.out.println("Saliendo del programa. ¡Hasta luego!");
