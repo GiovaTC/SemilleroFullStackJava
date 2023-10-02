@@ -11,7 +11,6 @@ public class ListaTareas {
     private List<Tarea> listaTareas;  // Nuevo atributo de tipo list
 
     public ListaTareas(String nombre) {
-        // Otros inicializadores
 
         this.listaTareas = new ArrayList<>();  // Inicialización de la lista de tareas
     }

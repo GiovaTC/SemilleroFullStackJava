@@ -28,7 +28,7 @@ public class ListasTareas {
             System.out.print("Ingrese la descripción de la nueva tarea: ");
             String nuevaTarea = Lector.leerCadena(scanner);
 
-            Tarea tarea = new Tarea(nuevaTarea);  // Debes tener una clase Tarea con un constructor adecuado
+            Tarea tarea = new Tarea(nuevaTarea);
             lista.agregarTarea(tarea);//llamada al metodo agregarTarea de la clase ListaTareas
 
             System.out.println("Tarea agregada a la lista '" + nombreLista + "'.");

@@ -75,7 +75,7 @@ public class Proyecto {
 
             System.out.print("Ingrese la opción: ");
             opcionSeleccionada = scanner.nextShort();
-            scanner.nextLine(); // Consumir la nueva línea después del número
+            scanner.nextLine();
 
             switch (opcionSeleccionada) {
                 case 1:
