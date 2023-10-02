@@ -1,5 +1,5 @@
 
-package Sesion5.Modelo;
+package Sesion6.Modelo;
 
 import java.time.LocalDateTime;
 
