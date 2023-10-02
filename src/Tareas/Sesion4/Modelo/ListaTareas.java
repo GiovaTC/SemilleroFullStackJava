@@ -31,6 +31,10 @@ public class ListaTareas {
         return fechaCreacion;
     }
 
+    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
     public List<String> getTareas() {
         return tareas;
     }

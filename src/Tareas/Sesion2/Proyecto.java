@@ -78,20 +78,24 @@ public class Proyecto {
 
             switch (opcionSeleccionada) {
                 case 1:
+                    System.out.println("La opción seleccionada es la: " + 1 + " Crear nueva lista de tareas");
                     System.out.print("Ingrese el nombre de la nueva lista de tareas: ");
                     nombreOpcionSeleccionada = scanner.nextLine();
                     proyecto.crearNuevaListaDeTareas(nombreOpcionSeleccionada);
                     System.out.println("Lista de tareas '" + nombreOpcionSeleccionada + "' creada.");
                     break;
                 case 2:
+                    System.out.println("La opción seleccionada es la: " + 2 + " Ver listas de  tareas");
                     proyecto.verListasDeTareas();
                     break;
                 case 3:
+                    System.out.println("La opción seleccionada es la: " + 3 + " Ver tareas de lista");
                     System.out.print("Ingrese el nombre de la lista de tareas: ");
                     nombreOpcionSeleccionada = scanner.nextLine();
                     proyecto.verTareasDeLista(nombreOpcionSeleccionada);
                     break;
                 case 4:
+                    System.out.println("La opción seleccionada es la: " + 4 + " Actualizar lista de  tareas lista de tareas");
                     System.out.print("Ingrese el nombre de la lista de tareas: ");
                     nombreOpcionSeleccionada = scanner.nextLine();
                     System.out.print("Ingrese la descripción de la nueva tarea: ");
@@ -99,11 +103,13 @@ public class Proyecto {
                     proyecto.actualizarListaDeTareas(nombreOpcionSeleccionada, nuevaTarea);
                     break;
                 case 5:
+                    System.out.println("La opción seleccionada es la: " + 5 + " Eliminar lista de tareas");
                     System.out.print("Ingrese el nombre de la lista de tareas a eliminar: ");
                     nombreOpcionSeleccionada = scanner.nextLine();
                     proyecto.eliminarListaDeTareas(nombreOpcionSeleccionada);
                     break;
                 case 6:
+                    System.out.println("La opción seleccionada es la: " + 6 + " Salir de la aplicación");
                     System.out.println("Saliendo del programa. ¡Hasta luego!");
                     System.exit(0);
                     break;
